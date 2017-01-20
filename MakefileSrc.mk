@@ -5,7 +5,7 @@ LIB = sdcclib
 
 # Flags for above programs when calling them from the command line
 DFLAGS = -MM $(INCDIRS) $<
-CFLAGS = --model-large --std-c99 $(INCDIRS) -c $< -o "$(OBJDIR)/"
+CFLAGS = $(INCDIRS) -c $< -o "$(OBJDIR)/"
 LFLAGS =
 
 # File extensions for dependency files, source files, object files, and library files, respectively
